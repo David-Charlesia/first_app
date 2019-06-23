@@ -7,13 +7,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity
 {
+    private TextView text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         TextView text = new TextView(this);
-        text.setText("Yo les refrè, c'est comment la miff");
+        text.setText(R.string.app_name);
         setContentView(text);
+        TextView text2=new TextView(this);
+        text2.setText(R.string.pays);
+        setContentView(text2);
     }
 }
